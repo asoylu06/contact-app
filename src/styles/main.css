@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+    background: url("https://www.mkv.lv/wp-content/uploads/2020/02/contact-background-1-1.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 16px;
+        height: 20px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #94A3B8;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #3d5270;
+    }
+}
